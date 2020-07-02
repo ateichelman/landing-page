@@ -1,0 +1,85 @@
+html, body, #page-wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#top {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+}
+
+#header {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+nav {
+
+}
+
+.navbar {
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+}
+
+.item {
+  float:left;
+  height:100%;
+}
+
+.item a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 2vh 2vw;
+}
+
+.item a:hover {
+}
+
+#landing {
+  margin-top: auto;
+  height: 100%;
+  position: relative;
+}
+
+#cust-testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.testimonial {
+  background-color: white;
+  flex: 200px;
+  padding: 10px;
+  margin: 20px 75px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+#first, #second, #third, #signup {
+  text-align: center;
+  height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.med-box {
+  margin: 20px 25vw;
+}

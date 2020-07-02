@@ -1,40 +1,78 @@
-<div id="page-wrapper">
-	<header id="header">
-		<div>
-			<img src="" id="header-img"/>
-		</div>
-		<nav id="nav-bar">
-			<ul>
-				<li><a href="#first" class="nav-link">Topic1</a></li>
-				<li><a href="#second" class="nav-link">Topic2</a></li>
-				<li><a href="#third" class="nav-link">Topic3</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section id="top">
-		<h2>Customer Signup</h2>
-		<form id="form" action="https://www.freecodecamp.com/email-submit">
-			<input name="email" id="email" type="email" placeholder="Enter Email" required />
-			<input id="submit" type="submit" value="Get Started" class="bnt" />
-		</form>
-	</section>
-	<div class="container">
-		<section id="first">
-			<h2>First Section</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</section>
-	</div>
-	<div class="container">
-		<section id="second">
-			<h2>Second Section</h2>
-            <iframe id="video" src="" title="Unrelated song"></iframe>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</section>
-	</div>
-	<div class="container">
-		<section id="third">
-			<h2>Final Section</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</section>
-	</div>
-</div>
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.js"
+    integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(window).resize(function() {
+        $("#landing").css("margin-top" , $("#top").height());
+      }).resize();
+    });
+  </script>
+</head>
+<body>
+  <div id="page-wrapper">
+    <section id="top">
+      <header id="header">
+        <div class="logo-img">
+          <img src="" id="header-img"/>
+        </div>
+        <nav id="nav-bar">
+          <ul class="navbar">
+            <li class="item"><a href="#landing" class="nav-link">Top</a></li>
+            <li class="item"><a href="#test-sec" class="nav-link">Topic1</a></li>
+            <li class="item"><a href="#vid-sec" class="nav-link">Topic2</a></li>
+            <li class="item"><a href="#third" class="nav-link">Topic3</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+    <section id="landing">
+      <section class="flex-container" id="signup">
+    		<h2>Customer Signup</h2>
+    		<form id="form" action="https://www.freecodecamp.com/email-submit">
+    			<input name="email" id="email" type="email" placeholder="Enter Email" required />
+    			<input id="submit" type="submit" value="Get Started" class="btn" />
+    		</form>
+    	</section>
+    	<div class="container" id="test-sec">
+
+    		<section class="flex-container" id="first">
+                    <h2>Testimonials</h2>
+          <section id="cust-testimonials">
+
+            <section class="testimonial">
+        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <section class="testimonial">
+        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+            <section class="testimonial">
+        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+          </section>
+    		</section>
+    	</div>
+    	<div class="container" id="vid-sec">
+    		<section class="flex-container" id="second">
+    			<h2>Second Section</h2>
+          <iframe id="video" src="" title="Unrelated song"></iframe>
+          <section class="med-box">
+    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>    
+    		</section>
+    	</div>
+    	<div class="container">
+    		<section class="flex-container" id="third">
+    			<h2>Final Section</h2>
+          <section class="med-box">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+    		</section>
+    	</div>
+    </section>
+  </div>
+</body>
