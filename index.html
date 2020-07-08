@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script
     src="https://code.jquery.com/jquery-3.5.1.slim.js"
     integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
@@ -12,65 +14,107 @@
       }).resize();
     });
   </script>
+  <script type="text/javascript">
+    function respMenu(){
+      var x = document.getElementById("topnav");
+      if(x.className === "navbar"){
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
 </head>
 <body>
   <div id="page-wrapper">
     <section id="top">
       <header id="header">
-        <div class="logo-img">
-          <img src="" id="header-img"/>
-        </div>
         <nav id="nav-bar">
-          <ul class="navbar">
+          <ul class="navbar" id="topnav">
+            <li class="item">
+              <img src="img/logo.png" id="header-img"/>
+            </li>
             <li class="item"><a href="#landing" class="nav-link">Top</a></li>
-            <li class="item"><a href="#test-sec" class="nav-link">Topic1</a></li>
-            <li class="item"><a href="#vid-sec" class="nav-link">Topic2</a></li>
-            <li class="item"><a href="#third" class="nav-link">Topic3</a></li>
+            <li class="item"><a href="#test-sec" class="nav-link">Reviews/Ratings</a></li>
+            <li class="item"><a href="#vid-sec" class="nav-link">Video Tour</a></li>
+            <li class="item"><a href="#third" class="nav-link">Pricing</a></li>
+            <li class="item" id="dropdown" >
+              <a href="javascript:void(0);" class="icon" onclick="respMenu()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
     </section>
     <section id="landing">
       <section class="flex-container" id="signup">
-    		<h2>Customer Signup</h2>
+    		<h2>A Lorem Ipsum Adventure is more than just "filler"</h2>
     		<form id="form" action="https://www.freecodecamp.com/email-submit">
     			<input name="email" id="email" type="email" placeholder="Enter Email" required />
     			<input id="submit" type="submit" value="Get Started" class="btn" />
     		</form>
     	</section>
     	<div class="container" id="test-sec">
-
     		<section class="flex-container" id="first">
-                    <h2>Testimonials</h2>
+
           <section id="cust-testimonials">
 
             <section class="testimonial">
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        			<p><q class="full-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</q>
+              <q class="snip-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
+              </q></p>
             </section>
             <section class="testimonial">
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p><q class="full-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</q>
+              <q class="snip-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
+              </q></p>
             </section>
             <section class="testimonial">
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p><q class="full-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</q>
+              <q class="snip-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
+              </q></p>
             </section>
           </section>
     		</section>
     	</div>
     	<div class="container" id="vid-sec">
     		<section class="flex-container" id="second">
-    			<h2>Second Section</h2>
           <iframe id="video" src="" title="Unrelated song"></iframe>
           <section class="med-box">
     			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </section>    
+          </section>
     		</section>
     	</div>
     	<div class="container">
     		<section class="flex-container" id="third">
-    			<h2>Final Section</h2>
-          <section class="med-box">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </section>
+          <div class="price-cols">
+            <ul class="price-details">
+              <li class="pack-type">Basic</li>
+              <li class="pack-cost">$money</li>
+              <li>1 Week</li>
+              <li>Twin Sleeper</li>
+              <li>Free Breakfast</li>
+            </ul>
+          </div>
+          <div class="price-cols">
+            <ul class="price-details">
+              <li class="pack-type">Premium</li>
+              <li class="pack-cost">$$money</li>
+              <li>2 Weeks</li>
+              <li>Twin Sleeper</li>
+              <li>3 Meals a day</li>
+            </ul>
+          </div>
+          <div class="price-cols">
+            <ul class="price-details">
+              <li class="pack-type">Elite</li>
+              <li class="pack-cost">$$$$money</li>
+              <li>2 Weeks</li>
+              <li>2 Bedroom Suite</li>
+              <li>3 Meals + Room Service Package</li>
+            </ul>
+          </div>
     		</section>
     	</div>
     </section>
